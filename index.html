@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Persönliche Webseite über meinen Weg, Webentwicklerin 
+    zu werden. Hier siehst Du was ich bisher gelernt habe und was ich damit anstelle.">
+    <!-- <link rel="canonical" href="https://example.com"/> --> <!-- use for bilingual sites -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="120x120" href="images/120x120-icon-linda-bln-inv.png">
+    <link rel="apple-touch-icon" sizes="222x222" href="images/222x222-icon-linda-bln-inv-lg-rund.png">
+    <title>Linda in Berlin</title>
+</head>
+<body>
+    <header role="img" alt="">
+      <p id="clip">LINDA</p>
+      <!-- theme toggler -->
+      <button id="theme-toggle" onclick="themeToggle()" aria-label="switch to dark theme" aria-pressed="false"></button>
+        <!-- end theme toggler -->
+    <!-- cookies banner -->
+    <div id="cookie-circle" class="circle">
+        <svg width="100%" height="100%" viewBox="35 40 300 300"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <path id="cookie"
+            d="M 75 300
+            Q 115 115, 300 75 " />
+            <path id="dark"
+            d="M 105 300
+            Q 150 150, 300 105 " />
+        </defs>
+        
+        <text font-family="monospace" font-size="22" font-weight="bold" fill="#28325c">
+            <textPath xlink:href="#cookie">Es gibt keine Cookies hier,
+            </textPath>
+            <textPath xlink:href="#dark">
+                nicht mal im Darkmode.
+            </textPath>
+        </text>
+    </svg>
+    <p class="shrug cookie">¯\_(ツ)_/¯</p>
+    <button class="ok cookie" id="cookie-banner">OK</button>
+    <label for="cookie-banner">Cookie-Banner verschwinden lassen</label>
+    </div>
+    <!-- end cookie banner -->   
+    </header>
+    <!-- nav burger menu -->
+    <nav id="nav" role="navigation">
+        <div id="div-burger-container">
+        <!-- gave spans individual classes instead of IDs for 
+            specificity, so toggling class close-menu with js 
+            works -->
+            <div id="stripes">
+                <span class="burger-stripe menu-closed stripe1"></span>
+                <span class="burger-stripe menu-closed stripe2"></span>
+                <span class="burger-stripe menu-closed stripe3"></span>
+            </div>
+            <button id="btn-open-menu" onclick="openMenu()" 
+            aria-label="open menu" aria-pressed="false"></button>
+        </div>
+        <div id="hidden">
+            <ul id="menu" class="hide-menu">
+                <li><a href="#welcome-p">Willkommen</a></li>
+                <li><a href="#about-p">Über mich</a></li>
+                <li><a href="#skills-p">Skills</a></li>
+                <li><a href="#projects-p">Projekte</a></li>
+                <li><a href="#contact-p">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end nav burger menu -->
+    
+    <main>
+        <section id="welcome">
+         <div class="transparent-scroll-thing" id="welcome-p"></div>
+         <div class="p-frame">
+             <h1>Willkommen!</h1>
+             <p class="framed-p">
+                Ich mache responsive, stabile und 
+                barrierefreie Webseiten. Schau Dich um, wenn Du eine Webentwicklerin suchst. 
+                <br>
+                Dazu habe ich ein paar meiner liebsten Berlin-Fotos mitgebracht.
+            </p>
+            <div id="welcome-div">
+                <img src="images/250x250-profil-linda-portrait1.jpg" width="250" height="250" alt="" class="logo">
+            </div>
+         </div> 
+        </section>
+        <section id="about">
+         <img src="images/860x645-l-bln_bikini_top.jpg" width="860" height="645" srcset="images/750x563-m-bln_bikini_top.jpg w750, 
+         images/860x645-l-bln_bikini_top.jpg w860" sizes="100vw"
+         alt="Sonnenuntergang zwischen zwei Hochhäusern, Reflektion auf gläserner Dachschräge" class="img-scroll">
+         <div class="transparent-scroll-thing" id="about-p"></div>
+         <div class="p-frame">
+             <h2>Über mich</h2> 
+             <details>
+                <summary>Stabile, datensparsame, responsive und 
+                    barrierefreie Webseiten . </summary>
+                <p>Dies sind die Schlagworte in der Webentwicklung, 
+                    die ich wichtig finde.
+                </p>
+                <p>Ich finde, Webseiten sind anständig, wenn sie: stabil sind, nur so viele Daten wie nötig enthalten, 
+                    auf Handys, Tablets und PCs gut aussehen und zugänglich für alle Menschen sind, die sie besuchen.
+                </p>
+                <p>Jeden Tag arbeite ich daran, immer bessere Webseiten machen zu können.</p>
+                <p>Zum Testen der Webseiten verwende ich Google Developer Tools wie 'Lighthouse'. Dort lasse ich die Suchmaschinenoptimierung, 
+                    die Leistungsfähigkeit und die Benutzerfreundlichkeit der Webseite für Menschen mit Behinderung bewerten.
+                    Für den letzten Punkt verwende ich zusätzlich eine Browser-Erweiterung namens 'Accessibility Insights'.</p>
+            </details>
+             <details>
+                <summary>Was ich zur Zeit mache</summary>
+                <p>Jeden Tag lerne ich Neues über Webentwicklung und tüftele an Projekten, um zu sehen, wie es funktioniert und was noch 
+                    damit möglich ist</p>
+                <p>Auf meinem Weg Webentwicklerin zu werden, bin ich bisher so weit gekommen, dass
+                    ich gute, einfache Webseiten machen kann, die wie eine “Online-Visitenkarte” oder eine “Online-Broschüre” 
+                    sind. Ich arbeite daran, auch aufwändigere Websites zum Beispiel mit Mitglieder- bzw. Kundenlogin und Shop
+                    machen zu können. Auf jeden Fall immer anständige Webseiten: Für alle Bildschirmgrößen, für alle Menschen,
+                    datensparsam und stabil.
+                </p>    
+                <p>Zusätzlich zu meinen HTML, CSS und JavaScript-Kenntnissen starte ich nun React zu lernen. Danach 
+                    möchte ich mich Node.js zuwenden.
+                </p>
+                <p> Mein Ziel ist es eine Position in einem Webentwickler-Team zu bekommen und gemeinsam mit anderen Menschen 
+                    zu arbeiten und zu lernen. Bis dahin nehme ich gerne Aufträge für kleinere Projekte an, um ihnen einen 
+                    tollen Platz im Internet einzurichten.
+                </p>
+                <p><a href="#projects">Hier ist eine Auswahl meiner Projekte zu sehen.</a>
+                </p>
+                <p>Seit Herbst 2019 bin ich Co-Organisatorin der freeCodeCamp-Berlin-MeetUp-Gruppe. Unsere Dienstage, an denen wir uns alle
+                    persönlich treffen, uns austauschen und von einander lernen, genieße ich sehr. 
+                    <a href="https://freecodecamp.in-berlin.de/" target="_blank" rel="noopener noreferrer">freeCodeCamp Berlin-Webseite</a>
+                </p>
+                <img class="blend-bg-img only-one-img" src="images/620x465-cont-fcc-bln-meetUp.jpg" width="620" height="465" 
+                alt="mehrere Leute betrachten und besprechen Code auf einem großen Bildschirm">
+                
+            </details>
+            <details id="my-future">
+                <summary>Was ich in Zukunft machen möchte</summary>
+                    <img class="blend-bg-img float-left" src="images/620x413-cont-remy_loz-3S0INpfREQc-unsplash.jpg" width="620" height="413" alt="">
+                    <p > Arbeit von zu Hause hat viele Vorteile und ich möchte das auch zum Teil weiterhin tun. Aber ich wünsche mir sehr, 
+                    einem Team anzugehören, um miteinander und nebeneinander zu arbeiten, voneinander zu lernen, Pläne zu 
+                    schmieden und daraus resultierende, gemeinsame Erfolge zu feiern. 
+                    </p>
+                    <img class="blend-bg-img float-right" src="images/620x413-cont-cowomen-ZKHksse8tUU-unsplash.jpg" width="620" height="413" alt="">
+                    <p>Ich möchte dabei sein, wenn neue, tolle Webseiten entstehen oder bestehende weiterentwickelt werden, um Ihr 
+                    jeweiliges Plätzchen im Internet in strahlendem Licht erscheinen zu lassen!
+                    </p>
+                    <p class="cleared-p">Nimm Kontakt zu mir auf, wenn in Deinem Team noch jemand gebraucht wird! 
+                        <a href="#contact">Zu den Kontaktmöglichkeiten</a>
+                    </p>
+            </details>
+            <details>
+                <summary>Von der Schnittmustererstellung zur Webentwicklung</summary>
+                <p>Durch meine Tätigkeit als Erstellerin von Schnittmustern zum Nähen von Kleidung, die ich in digitaler Form unter dem 
+                    Namen 'Leela Minzz' zum Verkauf anbiete, wurde ich sehr vertraut mit der Arbeit am PC und diversen Programmen.
+                    Die Schnittmuster habe ich mit dem Vektorzeichenprogramm 'Inkscape' gezeichnet. Meine erste Webseite habe ich 2005 
+                    mit einem Homepage-Baukasten gebaut. Die Zweite einige Jahre später mit selbstgehostetem Wordpress. Und jetzt baue ich 
+                    Webseiten quasi aus dem nichts! 
+                </p>
+                <p>Die Schnittmustererstellung hat einen Punkt erreicht, an dem ich es nicht mehr verbessern konnte, dadurch fehlte 
+                    mir die Herausforderung. Daher beschloss ich, Programmieren zu lernen und mit Webentwicklung anzufangen. 
+                    Mir gefiel und gefällt die Idee, schnell etwas sichtbares vorweisen zu können. Ich erschaffe gerne Dinge. Oft werden sie 
+                    sehr bunt, da kann ich mich für meine eigenen Projekte schlecht zurückhalten (siehe diese Webseite ;) ), daher finde 
+                    ich es angenehm, wenn ich eine Designvorlage habe, an die ich mich halten kann. (siehe meine Frontend Mentor Projekte)
+                    <a href="https://www.frontendmentor.io/profile/ellienndea" target="_blank" rel="noreferrer">Meine Projekte bei FrontendMentor.io</a>
+
+                </p>
+            </details>
+            <details>
+                <summary>Die für mich wichtigsten Quellen zum Lernen und Üben</summary>
+                <p>Dies sind die Webseiten, die ich am häufigsten besucht habe, um zu lernen und zu üben.</p>
+                <p>Für mich funktioniert es gut, manchmal das gleiche Thema aus verschiedenen Quellen mehrmals zu lernen.</p>
+                <ul>
+                    <li>
+                        <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
+                        W3Schools</a>
+                    </li>
+                    <li>
+                        <a href="https://www.freecodecamp.org/learn/" target="_blank" rel="noopener noreferrer">
+                        freeCodeCamp</a>
+                    </li>
+                    <li>
+                        <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">
+                        Udemy</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">
+                            MDN Web Docs (Mozilla Developer Network)
+                        </a>
+                    </li>
+                    <li class="word-break">
+                        <a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">
+                        CSS-tricks</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                        Google</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        You Tube</a>
+                    </li>
+                    <li>
+                        <a href="https://cssbattle.dev/" target="_blank" rel="noopener noreferrer">
+                        CSS Battle</a>
+                    </li>
+                    <li>
+                        <a href="https://dev.to/" target="_blank" rel="noopener noreferrer">
+                        Dev.to</a>
+                    </li>
+                    <li>
+                        <a href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">
+                        Frontend Mentor</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank" rel="noopener noreferrer">
+                        World Wide Web Consortium (W3C)</a>
+                    </li>
+                    <li>
+                        <a href="https://lab.github.com/" target="_blank" rel="noopener noreferrer">
+                            GitHub Learning Lab</a>
+                    </li>
+                </ul>
+                <p>Das sind nur jene, die ich am häufigsten besucht habe. 
+                    Es gibt noch so viel mehr Wissensquellen. </p>
+                <p>Wenn Du selbst Webentwicklung lernst und mich etwas fragen möchtest, nimm Kontakt zu mir auf.
+                    <a href="#contact">Kontakt</a>
+                </p>
+            </details>
+            </section>
+         </div> 
+        </section>
+        <section id="skills">
+         <img src="images/860x645-l-bln_planetarium.jpg" width="860" height="645" srcset="images/750x563-m-bln_planetarium.jpg 750w, 
+         images/860x645-l-bln_planetarium.jpg 860w"  sizes="100vw"
+         alt="Planetarium am Abend, bunt angestrahlt" class="img-scroll"> 
+         <div class="transparent-scroll-thing" id="skills-p"></div>
+         <div class="p-frame">
+             <h2>Skills</h2>
+                 <div id="skill-icons-container">
+                      <span class="icon-grid-items">
+                          <img src="images/96x96-icons8-html-5-96.png"  width="96" height="96" alt="" class="icon-lang"> 
+                        <p>HTML</p>  
+                        </span>
+                      <span class="icon-grid-items">
+                          <img src="images/96x96-icons8-css3-96.png"  width="96" height="96" alt="" class="icon-lang"> 
+                        <p>CSS</p>  
+                        </span>
+                      <span class="icon-grid-items">
+                          <img src="images/96x96-icons8-javascript-96.png"  width="96" height="96" alt="" class="icon-lang"> 
+                        <p>JavaScript</p>  
+                        </span>
+                      <span class="icon-grid-items">
+                          <img src="images/148x148-icon-bootstrap-logo.png"  width="148" height="148" alt="" class="icon-lang"> 
+                        <p>Bootstrap</p>  
+                        </span>
+                      <span class="icon-grid-items">
+                          <img src="images/100x100-icons8-jquery-100.png"  width="100" height="100" alt="" class="icon-lang"> 
+                        <p>jQuery</p>  
+                        </span>
+                      <!-- <span class="icon-grid-items">
+                          <img src="images/tailwindcss-logo.png"  width="96" height="96" alt="" class="icon-lang"> 
+                        <p>Tailwind</p>  
+                        </span> -->
+                      <span class="icon-grid-items">
+                          <img src="images/96x96-icons8-git-96.png"  width="96" height="96" alt="" class="icon-lang"> 
+                        <p>Git</p>  
+                        </span>
+                      <span class="icon-grid-items">
+                          <img src="images/120x123-icon-tails.png"  width="120" height="123" alt="" class="icon-lang"> 
+                        <p>Tails</p>  
+                        </span>
+                      <span class="icon-grid-items">
+                          <img src="images/96x96-icons8-inkscape-96.png"  width="96" height="96" alt="" class="icon-lang"> 
+                        <p>Inkscape</p>  
+                        </span>
+                      <!-- <span class="icon-grid-items">
+                          <img src="images/icons8-figma-96.png" alt="" class="icon-lang"> 
+                        <p>Figma</p>  
+                        </span> -->
+                      <span class="icon-grid-items">
+                          <img src="images/148x148-icon-de.png"  width="148" height="148" alt="" class="icon-lang"> 
+                        <p>Deutsch</p>  
+                        </span>
+                      <span class="icon-grid-items">
+                          <img src="images/148x148-icon-en.png"  width="148" height="148" alt="" class="icon-lang"> 
+                        <p>Englisch</p>  
+                        </span>
+                      <span class="icon-grid-items">
+                          <img src="images/148x148-icon-nl.png"  width="148" height="148" alt="" class="icon-lang"> 
+                        <p>Nieder-<br>ländisch</p>  
+                        </span>
+                 </div>
+         </div>
+        </section>
+        
+        <section id="projects">
+         <img src="images/860x645-l-bln_eroller-stapel.jpg" width="860" height="645" srcset="images/750x563-m-bln_eroller-stapel.jpg w750, 
+         images/860x645-l-bln_eroller-stapel.jpg 860w"  sizes="100vw"
+         alt="Einige E-Roller wild aufeinander gestapelt " class="img-scroll"> 
+         <div class="transparent-scroll-thing" id="projects-p"></div>
+         <div class="p-frame">
+             <h2>Projekte</h2>
+             <div id="project-container">
+                 <div class="grid-items">
+                     <h3>freeCodeCamp Berlin-Webseite</h3>
+                     <img src="images/480x296-gal-FCC_bln.jpg"  width="480" height="296" alt="screenshot webseite von freeCodeCamp Berlin">
+                     <a href="https://freecodecamp.in-berlin.de/" target="_blank" rel="noopener noreferrer">zur freeCodeCamp-MeetUp-Berlin-Webseite</a>
+                 </div>
+                 <div class="grid-items">
+                     <h3>Image-Map Berliner Bezirke</h3>
+                     <img src="images/480x336-gal-berliner-bezirke.jpg"  width="480" height="336" alt="drawing of a racoon">
+                     <a href="https://ellienndea.github.io/berliner-bezirke/" target="_blank" rel="noopener noreferrer">zur Berliner-Bezirke-Webseite</a>
+                    </div>
+                    <div class="grid-items">
+                        <h3>Wordpress-Webseite</h3>
+                        <img src="images/480x272-gal-LeelaMinzz.jpg"  width="480" height="272" alt="Screenshot Leela Minzz Webseite">
+                        <a href="https://www.leelaminzz.de/" target="_blank" rel="noopener noreferrer">zur Leela-Minzz-Webseite</a>
+                    </div>
+                    <div class="grid-items">
+                        <h3>Bootstrap-Seite</h3>
+                        <img src="images/480x360-gal-bootstrap-seite.jpg"  width="480" height="360" alt="Screenshot einfache Webseite">
+                        <a href="bootstrap.html">zur Webseite (mit Bootstrap erstellt)</a>
+                    </div>
+                    <div class="grid-items">
+                        <h3>Schere-Stein-Papier-Spiel</h3>
+                        <img src="images/480x360-gal-SchereStPap.jpg"  width="480" height="360" alt="screenshot Schere-Stein-Papier-Spiel">
+                        <a href="https://ellienndea.github.io/schere-stein-papier/" target="_blank" rel="noopener noreferrer">zur Schere-Stein-Papier-Webseite</a>
+                    </div>
+                    <div class="grid-items">
+                        <h3>Frontend Mentor - 3-Column-Component</h3>
+                        <img src="images/480x343-gal-3_col_card_FM.jpg"  width="480" height="343" alt="screenshot 3-column-card">
+                        <a href="https://ellienndea.github.io/3-col-preview-card-comp-project/#" target="_blank" rel="noopener noreferrer">zur 3-Column-Component-Webseite</a>
+                    </div>
+                    <div class="grid-items">
+                        <h3>Typewriter-Effect-Codepen</h3>
+                        <img src="images/480x360-gal-Typewriter.jpg"  width="480" height="360" alt="screenshot typewriter">
+                        <a href="https://codepen.io/ellienndea/pen/GRvJLPM" target="_blank" rel="noopener noreferrer">zur Codepen-Webseite</a>
+                    </div>
+                    <div class="grid-items">
+                        <h3>Frontend Mentor - FAQ - Accordion</h3>
+                        <img src="images/480x337-gal-FAQaccordion.jpg"  width="480" height="337" alt="screenshot FAQ accordion">
+                        <a href="https://ellienndea.github.io/faq-accordion-card-main/" target="_blank" rel="noopener noreferrer">zur FAQ-Accordion-Webseite</a>
+                    </div>
+                    <div class="grid-items">
+                        <h3>Frontend Mentor - Tip Calculator</h3>
+                        <img src="images/480x329-gal-TipCalcFM.jpg"  width="480" height="329" alt="Screenshot tip calculator">
+                        <a href="https://ellienndea.github.io/tip-calculator-app/" target="_blank" rel="noopener noreferrer">zur Tip-Calculator-Webseite</a>
+                    </div>
+                
+            </div>
+             <p class="framed-p">
+                Brauchst Du ein Webseite oder Hilfe beim Erstellen von Webseiten, 
+                nimm Kontakt zu mir auf! <a href="#contact">Kontakt</a>
+            </p>
+         </div> 
+        </section>
+        <section id="contact">
+         <img src="images/860x599-l-bln_trekker_demo.jpg" width="860" height="599" srcset="images/750x523-m-bln_trekker_demo.jpg 750w, 
+         images/860x599-l-bln_trekker_demo.jpg 860w"  sizes="100vw"
+         alt="Viele Traktoren in einer Reihe mitten in Berlin" class="img-scroll"> 
+         <div class="transparent-scroll-thing" id="contact-p"></div>
+         <div class="p-frame">
+             <h2>Kontakt</h2>
+                 <div id="contact-icons-container">
+                     <span>
+                        <img src="images/222x222-icon-linda-bln-inv-lg-rund.png"  width="222" height="222" alt="" id="linda" class="logo">
+                     </span>
+                     <span class="icon-contact">
+                         <img src="images/150x150-icon-email.png"  width="150" height="150" alt="" >
+                         <a href="mailto:lindahahn@email.de">Schreibe mir eine Email</a> 
+                     </span>
+                     <span class="icon-contact">
+                         <img src="images/96x96-icons8-twitter-96.png"  width="96" height="96" alt="" >
+                         <a href="https://twitter.com/ellienndea" target="_blank" rel="noopener noreferrer">
+                            zu meinem Twitter-Account</a> 
+                     </span>
+                     <span class="icon-contact">
+                         <img src="images/105x105-icon-GitHub.png"  width="105" height="105" alt="" >
+                         <a href="https://github.com/ellienndea" target="_blank" rel="noopener noreferrer">
+                            zu meinem Github-Account</a> 
+                     </span>
+                     <span class="icon-contact">
+                         <img src="images/118x118-icon-linkedIn.png"  width="118" height="118" alt="" >
+                         <a href="https://www.linkedin.com/in/linda-hahn-tukker-8ab861220/" target="_blank" rel="noopener noreferrer">
+                            zu meinem linkedIn &reg -Account</a> 
+                     </span>
+                     <span class="icon-contact">
+                         <img src="images/64x64-icons8-codepen-64.png"  width="64" height="64" alt="" >
+                         <a href="https://codepen.io/ellienndea" target="_blank" rel="noopener noreferrer">
+                            zu meinem Codepen-Account</a> 
+                     </span>
+                 </div>
+         </div> 
+        </section>
+        
+    </main>
+    <footer><p> &copy Linda Tukker 2021</p></footer>
+    <script src="app.js"></script>
+</body>
+</html>

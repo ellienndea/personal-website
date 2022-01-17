@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30.846754mm"
+   height="30.98852mm"
+   viewBox="0 0 30.846754 30.98852"
+   version="1.1"
+   id="svg5203"
+   inkscape:version="0.92.0 r15299"
+   sodipodi:docname="moon.svg">
+  <defs
+     id="defs5197" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-100.35695"
+     inkscape:cy="-33.805843"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="1.5"
+     fit-margin-left="3.5"
+     fit-margin-right="7.6"
+     fit-margin-bottom="1.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5200">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-81.792815,-129.55931)">
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.20684592;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 96.347998,145.05357 c 0.31106,6.44017 2.703189,9.97737 8.330472,12.91798 -1.65931,0.69333 -3.48063,1.07628 -5.391396,1.07628 -7.728816,0 -13.994259,-6.26544 -13.994259,-13.99426 0,-7.72882 6.265443,-13.99426 13.994259,-13.99426 1.693546,0 4.250006,0.5082 5.752496,1.05934 -5.740016,2.63804 -8.985236,6.85489 -8.691572,12.93492 z"
+       id="path4625"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scssscs" />
+  </g>
+</svg>

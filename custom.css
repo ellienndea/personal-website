@@ -1,0 +1,19 @@
+.bg-bild {
+    background-image: url(img/InspiredImages\ Pixabay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 31vh 0vh;
+}
+.text-shadow-2 {
+    text-shadow: 2px 2px grey, -2px -2px white;
+}
+.text-shadow-1 {
+    text-shadow: 1px 1px grey, -1px -1px white;
+}
+.gradient-bg {
+    background: linear-gradient(30deg, #eaacb9 20%, #5df8e8 80%);
+}
+.gradient-bg-sharp {
+    background: linear-gradient(  #5df8e8 62%, #eaacb9 62%);
+}
