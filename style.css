@@ -432,6 +432,10 @@ a:focus {
   border-radius: .5rem;
   background: white;
 }
+.icon-contact a {
+  display: flex;
+  align-items: center;
+}
 /* logo in contact section */
 #linda {
   width: 20rem;
